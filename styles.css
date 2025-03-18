@@ -90,6 +90,21 @@ header {
     padding: 100px 50px;
 }
 
+.work-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.work-content .video-container {
+    flex: 1;
+    margin: 0;
+}
+
+.work-text-content {
+    flex: 1;
+}
+
 .work-content h2 {
     font-size: 3em;
     margin-bottom: 50px;
@@ -171,6 +186,14 @@ header {
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5em;
+    }
+
+    .work-content {
+        flex-direction: column;
+    }
+
+    .work-content .video-container {
+        margin-bottom: 30px;
     }
 
     .work-images {
